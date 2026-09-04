@@ -12,6 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 CORE_FILES = [
     "runtime-contract.md",
+    "progressive-session.md",
     "router.yaml",
     "safety-boundary.md",
     "output-self-check.md",
@@ -81,7 +82,15 @@ def expected_files(skill: str) -> list[tuple[Path, Path]]:
     for name in CORE_FILES:
         source = ROOT / "core" / name
         pairs.append((source, skill_root / "references" / "core" / name))
-    for relative in DEPENDENCIES[skill]:
+    dependencies = list(DEPENDENCIES[skill])
+    if skill == "reaction-mode":
+        # The main entry executes the selected route in hosts that cannot invoke
+        # a second Skill. It therefore needs each leaf's full local material,
+        # not merely the leaf SKILL.md summary.
+        for leaf, leaf_dependencies in DEPENDENCIES.items():
+            if leaf != "reaction-mode":
+                dependencies.extend(leaf_dependencies)
+    for relative in dict.fromkeys(dependencies):
         source = ROOT / relative
         pairs.append((source, skill_root / "references" / relative))
     if skill == "reaction-mode":

@@ -17,3 +17,18 @@ cases:
     route: training_diagnosis
     must: ["回到合适层级"]
     must_not: ["阶段评分", "催促练习"]
+  - id: exploratory-first-turn-locates-before-analysis
+    route: reaction-mode_to_inner_pattern_work
+    input: "我在关系里总是特别敏感，想知道为什么。"
+    must: ["一句不带诊断的反映", "只问一个关于具体情境的问题"]
+    must_not: ["完整模式画像", "多步练习", "把暂定观察写成结论"]
+  - id: exploratory-second-turn-expands-one-variable
+    route: reaction-mode_to_inner_pattern_work
+    prior_turn: "用户已给出一次具体争执。"
+    must: ["只追问一个关键反应变量"]
+    must_not: ["多个并列问题", "完整机制解释"]
+  - id: exploratory-observation-requires-material
+    route: reaction-mode_to_inner_pattern_work
+    prior_turn: "用户已给出具体情境和一个身体/自动念头/冲动变量。"
+    must: ["一个可被用户修正的暂定观察"]
+    must_not: ["标签化结论", "完整训练路径"]

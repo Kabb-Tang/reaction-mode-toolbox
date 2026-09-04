@@ -5,7 +5,7 @@ description: 用户想了解反应模式工作台的体系、工具、模块、�
 
 # 体系说明与导航
 
-先读取 `references/core/runtime-contract.md`、`references/core/safety-boundary.md` 和 `references/core/output-self-check.md`。
+先读取 `references/core/runtime-contract.md`、`references/core/progressive-session.md`、`references/core/safety-boundary.md` 和 `references/core/output-self-check.md`。
 
 按问题读取主文档、使用指南、理论框架、诊断路径或元规则。只解释用户当前需要理解的部分，避免一次倾倒完整体系。
 

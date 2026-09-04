@@ -10,11 +10,12 @@ description: 反应模式工作台的单入口工具箱。收到用户自然语�
 每轮先读取：
 
 - `core/runtime-contract.md`
+- `core/progressive-session.md`
 - `core/safety-boundary.md`
 - `core/output-self-check.md`
 - `modules/router.md`
 
-根据路由选择一个主要模块，并在同一轮完成它。不要要求用户重新发送提示词，也不要让用户在多个模块之间自行选择。
+根据路由选择一个主要模块。探索类请求按《递进式会谈编排》逐步推进：先定位，再展开，再做暂定观察，最后才小剂量推进；不要因已能分类就一次讲完答案。不要要求用户重新发送提示词，也不要让用户在多个模块之间自行选择。
 
 ## 模块读取
 
