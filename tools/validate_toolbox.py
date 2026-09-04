@@ -41,7 +41,7 @@ def main() -> int:
             continue
         if read_name(path) != skill:
             errors.append(f"frontmatter name mismatch: {path.relative_to(ROOT)}")
-    spark_entry = ROOT / "adapters" / "gemini-spark" / "SKILL.md"
+    spark_entry = ROOT / "adapters" / "gemini-spark" / "spark-entry.template.md"
     if not spark_entry.is_file() or read_name(spark_entry) != "reaction-mode-toolbox":
         errors.append("missing or invalid single-entry Spark adapter")
     for module in ("router", "first-aid", "pattern", "training", "construction", "journal", "framework"):

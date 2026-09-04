@@ -44,7 +44,10 @@ def main() -> int:
     if spark_target.exists():
         shutil.rmtree(spark_target)
     spark_target.mkdir(parents=True)
-    shutil.copy2(ROOT / "adapters" / "gemini-spark" / "SKILL.md", spark_target / "SKILL.md")
+    shutil.copy2(
+        ROOT / "adapters" / "gemini-spark" / "spark-entry.template.md",
+        spark_target / "SKILL.md",
+    )
     shutil.copytree(ROOT / "adapters" / "gemini-spark" / "modules", spark_target / "modules")
     (spark_target / "core").mkdir()
     for source in (ROOT / "core").glob("*.md"):
