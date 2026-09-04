@@ -12,6 +12,8 @@ npx -y skills add Kabb-Tang/reaction-mode-toolbox -g --all
 
 安装后，优先直接描述你的处境或需求；`reaction-mode` 是默认总入口，会先判断安全与场景。对模式、训练、关系困扰等探索性请求，它会像一次咨询式会谈那样逐层询问、反映和推进，而不是依据第一句话给完整答案。也可以在支持原生多 Skill 的环境中直接选用任一叶子 Skill。
 
+每次只服务一个当前会谈焦点。焦点未完成时留在当前路线；用户明确换目标时才重新路由；焦点已经收束时直接结束，不会自动安排下一模块。
+
 Gemini Spark 不以多 Skill 发现为入口：从本仓库构建后，上传 `dist/gemini-spark/reaction-mode-toolbox/` 整个文件夹即可获得单主入口、内部模块递进的体验。
 
 ## 边界

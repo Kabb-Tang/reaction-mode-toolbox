@@ -5,7 +5,7 @@ description: 用户明确希望理解反复反应、背后模式或内在机制�
 
 # 内在模式工作
 
-先读取 `references/core/runtime-contract.md`、`references/core/progressive-session.md`、`references/core/safety-boundary.md` 和 `references/core/output-self-check.md`。
+先读取 `references/core/runtime-contract.md`、`references/core/focus-lifecycle.md`、`references/core/progressive-session.md`、`references/core/safety-boundary.md` 和 `references/core/output-self-check.md`。
 
 再读取 `references/knowledge/runbooks/inner_pattern_work.md`。首次探索先定位具体情境，下一轮再展开关键变量；只有已有情境和关键反应变量时，才提出可被用户修正的一点观察。按需读取理论框架、话术库或案例；优先精准提问，不将示例话术原样套用。
 

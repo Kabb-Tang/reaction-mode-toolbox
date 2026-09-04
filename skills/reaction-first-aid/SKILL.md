@@ -5,7 +5,7 @@ description: 在急性触发、强烈冲动或峰值后残余激活时，提供�
 
 # 急性稳定与身体路由
 
-先读取 `references/core/runtime-contract.md`、`references/core/progressive-session.md`、`references/core/safety-boundary.md` 和 `references/core/output-self-check.md`。
+先读取 `references/core/runtime-contract.md`、`references/core/focus-lifecycle.md`、`references/core/progressive-session.md`、`references/core/safety-boundary.md` 和 `references/core/output-self-check.md`。
 
 再按情况读取：
 

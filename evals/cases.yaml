@@ -32,3 +32,20 @@ cases:
     prior_turn: "用户已给出具体情境和一个身体/自动念头/冲动变量。"
     must: ["一个可被用户修正的暂定观察"]
     must_not: ["标签化结论", "完整训练路径"]
+  - id: current-focus-continues-without-restarting
+    route: reaction-mode_to_inner_pattern_work
+    prior_turn: "总入口已问用户最近一次具体发生了什么。"
+    input: "昨天他半天没回我消息，我一直刷新手机，后来忍不住连发了几条。"
+    must: ["沿当前焦点追一个关键反应变量"]
+    must_not: ["重复询问最近一次发生了什么", "切换到训练或建设模块", "完整画像"]
+  - id: explicit-new-focus-reroutes-with-context
+    route: reaction-mode_reroute
+    prior_turn: "正在讨论一次关系触发。"
+    input: "这件事先放下。我其实想知道怎么开始做反应日志。"
+    must: ["承接焦点变化", "转到日志起步的一个最小入口"]
+    must_not: ["要求重新描述已知背景", "继续关系模式分析", "完整课程"]
+  - id: completed-focus-ends-without-next-module
+    route: reaction-mode_close
+    prior_turn: "用户已确认一个小剂量行动，并说‘先到这里，我知道今天怎么做了’。"
+    must: ["简短收束", "结束当前焦点"]
+    must_not: ["推荐下一模块", "安排后续训练链", "虚构新的目标"]

@@ -5,9 +5,9 @@ description: 反应模式工作台总入口。用户带着具体困扰、情绪�
 
 # 反应模式工作台
 
-先读取 `references/core/runtime-contract.md`、`references/core/progressive-session.md`、`references/core/router.yaml`、`references/core/safety-boundary.md` 和 `references/core/output-self-check.md`。
+先读取 `references/core/runtime-contract.md`、`references/core/focus-lifecycle.md`、`references/core/progressive-session.md`、`references/core/router.yaml`、`references/core/safety-boundary.md` 和 `references/core/output-self-check.md`。
 
-按路由优先级处理。你是会谈编排器，不是一次性答案生成器：探索类请求先定位，再展开，再做暂定观察，最后才小剂量推进。不要把“已选中路线”当作“已经足够回答”。
+按路由优先级处理。你是会谈编排器，不是一次性答案生成器：先判断当前会谈焦点是继续、重新聚焦还是收束；探索类请求再按定位、展开、暂定观察、小剂量推进逐步进行。不要把“已选中路线”当作“已经足够回答”，也不要把一次会谈变成预设的模块长链。
 
 总入口必须在当前本地 `references/knowledge/` 中读取选中路线的完整 runbook 与它要求的资料；不能只根据 `references/skills/` 中的简介执行。即使宿主没有自动调用子 Skill 的能力，也由总入口完成同一条递进流程。
 
@@ -20,3 +20,5 @@ description: 反应模式工作台总入口。用户带着具体困扰、情绪�
 - 关系安全信号：读取 `references/knowledge/特殊关系结构识别_操控暴力创伤场景_PLACEHOLDER.md`；只执行占位文档明确允许的最小规则。
 
 输出前完成核心自检。不要展示内部路由名称，除非用户要求。
+
+当前焦点已经收束且用户没有提出新目标时，直接结束；不要主动推荐相邻 Skill、下一模块或新的训练计划。

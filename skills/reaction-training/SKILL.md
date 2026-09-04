@@ -5,7 +5,7 @@ description: 用户询问如何开始 v3.0 训练、正在模块一至三中卡�
 
 # 训练引导与诊断
 
-先读取 `references/core/runtime-contract.md`、`references/core/progressive-session.md`、`references/core/safety-boundary.md` 和 `references/core/output-self-check.md`。
+先读取 `references/core/runtime-contract.md`、`references/core/focus-lifecycle.md`、`references/core/progressive-session.md`、`references/core/safety-boundary.md` 和 `references/core/output-self-check.md`。
 
 - 起步或训练方向：读取使用指南、工具 C、模块一和 `runbooks/training_guidance.md`。
 - 明确卡点：读取诊断路径、元规则、相关模块和 `runbooks/training_diagnosis.md`。

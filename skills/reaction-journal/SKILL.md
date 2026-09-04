@@ -5,7 +5,7 @@ description: 用户想记录一次反应、追踪反复触发、整理日志或�
 
 # 反应日志与回看
 
-先读取 `references/core/runtime-contract.md`、`references/core/progressive-session.md`、`references/core/output-self-check.md` 和工具 C。
+先读取 `references/core/runtime-contract.md`、`references/core/focus-lifecycle.md`、`references/core/progressive-session.md`、`references/core/output-self-check.md` 和工具 C。
 
 - 单次记录或起步：读取 `references/knowledge/runbooks/reaction_journal.md` 与模块一。
 - 月度回看：读取 `references/knowledge/runbooks/monthly_review.md` 与元规则。
