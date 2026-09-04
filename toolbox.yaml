@@ -1,0 +1,28 @@
+id: reaction-mode-toolbox
+name: 反应模式工作台工具箱
+version: 0.1.0
+language: zh-CN
+runtime:
+  default_entry: reaction-mode
+  direct_execution: true
+  requires_native_skill_runtime: false
+  max_one_primary_route_per_turn: true
+  safety_precedence:
+    - crisis_or_out_of_scope
+    - acute_peak
+    - relationship_safety
+skills:
+  - reaction-mode
+  - reaction-first-aid
+  - reaction-pattern
+  - reaction-training
+  - reaction-construction
+  - reaction-journal
+  - reaction-framework
+source_of_truth:
+  core: core/
+  knowledge: knowledge/
+  skills: skills/
+generated:
+  skill_references: skills/*/references/
+  distributions: dist/

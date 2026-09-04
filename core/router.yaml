@@ -1,0 +1,58 @@
+router_version: 0.1.0
+principle: "先识别安全优先级，再判断用户当下需要；默认不把实用问题升级为内在模式工作。"
+priority_order:
+  - crisis_or_out_of_scope
+  - acute_peak
+  - relationship_safety
+  - user_feedback_repair
+  - body_regulation
+  - reaction_journal
+  - practical_support
+  - emotional_support
+  - inner_pattern_work
+  - training_guidance
+  - training_diagnosis
+  - construction_work
+  - monthly_review
+  - framework_explanation
+  - natural_conversation
+routes:
+  crisis_or_out_of_scope:
+    skill: reaction-mode
+    action: "转介；仅提供稳定和暂停重大决定。"
+  acute_peak:
+    skill: reaction-first-aid
+    action: "短时稳定；不分析。"
+  relationship_safety:
+    skill: reaction-mode
+    action: "执行关系安全占位规则，必要时转介；不进入模式归因或沟通技巧。"
+  body_regulation:
+    skill: reaction-first-aid
+    action: "只做状态路由；不写冥想或深潜脚本。"
+  reaction_journal:
+    skill: reaction-journal
+    action: "最低门槛记录或月度回看。"
+  practical_support:
+    skill: reaction-mode
+    action: "先解决事情本身。"
+  emotional_support:
+    skill: reaction-mode
+    action: "陪伴和反映，不急着工具化。"
+  inner_pattern_work:
+    skill: reaction-pattern
+    action: "多问少断；一轮一个点。"
+  training_guidance:
+    skill: reaction-training
+    action: "给最低门槛下一步。"
+  training_diagnosis:
+    skill: reaction-training
+    action: "判断卡点并平和回到合适层级。"
+  construction_work:
+    skill: reaction-construction
+    action: "先核对适用范围和前提。"
+  monthly_review:
+    skill: reaction-journal
+    action: "按材料整理，不评分。"
+  framework_explanation:
+    skill: reaction-framework
+    action: "解释体系与使用方式，不替代当下支持。"

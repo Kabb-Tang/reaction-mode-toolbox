@@ -1,0 +1,15 @@
+{
+  "name": "reaction-mode-toolbox",
+  "displayName": "反应模式工作台",
+  "description": "反应模式工作台的多 Skill 工具箱：一个总入口与六个可独立使用的反应觉察、稳定、训练和复盘能力。",
+  "version": "0.1.0",
+  "skills": [
+    "./skills/reaction-mode",
+    "./skills/reaction-first-aid",
+    "./skills/reaction-pattern",
+    "./skills/reaction-training",
+    "./skills/reaction-construction",
+    "./skills/reaction-journal",
+    "./skills/reaction-framework"
+  ]
+}

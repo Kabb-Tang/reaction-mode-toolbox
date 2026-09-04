@@ -1,0 +1,27 @@
+{
+  "name": "reaction-mode-toolbox-marketplace",
+  "owner": {
+    "name": "Kabb-Tang"
+  },
+  "metadata": {
+    "description": "反应模式工作台多 Skill 工具箱",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "reaction-mode-toolbox",
+      "description": "反应模式工作台：由 reaction-mode 总入口根据用户处境分流到稳定、模式探索、训练、建设、日志或体系说明。",
+      "source": "./",
+      "strict": true,
+      "version": "0.1.0",
+      "category": "personal-development",
+      "keywords": [
+        "reflection",
+        "emotional-regulation",
+        "training",
+        "journal",
+        "chinese"
+      ]
+    }
+  ]
+}

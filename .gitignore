@@ -1,0 +1,7 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# 发行物可由 tools/build_portable_bundle.py 重新生成。
+dist/
